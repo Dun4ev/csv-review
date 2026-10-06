@@ -1,0 +1,10 @@
+﻿_record,_issues,document_id,revision,document_date,amount,currency,status
+3,duplicate_unique_key,DEMO-003,00,2026-10-03,99.00,USD,draft
+4,duplicate_unique_key,DEMO-003,00,2026-10-03,101.00,USD,draft
+5,document_date:invalid_iso_date,DEMO-004,00,2026-02-30,44.00,EUR,review
+6,amount:below_minimum,DEMO-005,01,2026-10-05,'-5.00,USD,review
+7,amount:invalid_decimal,DEMO-006,00,2026-10-06,"1,250.00",USD,review
+8,currency:unexpected_value,DEMO-007,00,2026-10-06,75.00,GBP,review
+9,missing_unique_key; revision:required,DEMO-008,,2026-10-06,75.00,USD,review
+11,status:unexpected_value,DEMO-010,00,2026-10-06,75.00,USD,closed
+12,document_id:spreadsheet_formula,'=1+1,00,2026-10-06,75.00,USD,review

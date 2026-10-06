@@ -1,0 +1,4 @@
+﻿_record,_issues,document_id,revision,document_date,amount,currency,status
+1,,DEMO-001,00,2026-10-01,120.50,USD,review
+2,,DEMO-002,01,2026-10-02,85.00,EUR,approved
+10,,DEMO-009,00,2026-10-06,75.00,USD,approved

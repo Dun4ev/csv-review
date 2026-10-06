@@ -1,0 +1,177 @@
+{
+  "summary": {
+    "tool_version": "1.0.0",
+    "records": 12,
+    "accepted": 3,
+    "needs_review": 9,
+    "input_sha256": "0fcd90622e85e3bb59732267cff89f76d292b78ff5d1f38bcf68902962ed7db1",
+    "schema_sha256": "80212b629a05f07557c310e44ae88988065b7d6d7a7cd6c79720384169b4a5c2",
+    "csv_formula_protection": true,
+    "dry_run": false
+  },
+  "records": [
+    {
+      "record": 1,
+      "values": {
+        "document_id": "DEMO-001",
+        "revision": "00",
+        "document_date": "2026-10-01",
+        "amount": "120.50",
+        "currency": "USD",
+        "status": "review"
+      },
+      "issues": []
+    },
+    {
+      "record": 2,
+      "values": {
+        "document_id": "DEMO-002",
+        "revision": "01",
+        "document_date": "2026-10-02",
+        "amount": "85.00",
+        "currency": "EUR",
+        "status": "approved"
+      },
+      "issues": []
+    },
+    {
+      "record": 3,
+      "values": {
+        "document_id": "DEMO-003",
+        "revision": "00",
+        "document_date": "2026-10-03",
+        "amount": "99.00",
+        "currency": "USD",
+        "status": "draft"
+      },
+      "issues": [
+        "duplicate_unique_key"
+      ]
+    },
+    {
+      "record": 4,
+      "values": {
+        "document_id": "DEMO-003",
+        "revision": "00",
+        "document_date": "2026-10-03",
+        "amount": "101.00",
+        "currency": "USD",
+        "status": "draft"
+      },
+      "issues": [
+        "duplicate_unique_key"
+      ]
+    },
+    {
+      "record": 5,
+      "values": {
+        "document_id": "DEMO-004",
+        "revision": "00",
+        "document_date": "2026-02-30",
+        "amount": "44.00",
+        "currency": "EUR",
+        "status": "review"
+      },
+      "issues": [
+        "document_date:invalid_iso_date"
+      ]
+    },
+    {
+      "record": 6,
+      "values": {
+        "document_id": "DEMO-005",
+        "revision": "01",
+        "document_date": "2026-10-05",
+        "amount": "-5.00",
+        "currency": "USD",
+        "status": "review"
+      },
+      "issues": [
+        "amount:below_minimum"
+      ]
+    },
+    {
+      "record": 7,
+      "values": {
+        "document_id": "DEMO-006",
+        "revision": "00",
+        "document_date": "2026-10-06",
+        "amount": "1,250.00",
+        "currency": "USD",
+        "status": "review"
+      },
+      "issues": [
+        "amount:invalid_decimal"
+      ]
+    },
+    {
+      "record": 8,
+      "values": {
+        "document_id": "DEMO-007",
+        "revision": "00",
+        "document_date": "2026-10-06",
+        "amount": "75.00",
+        "currency": "GBP",
+        "status": "review"
+      },
+      "issues": [
+        "currency:unexpected_value"
+      ]
+    },
+    {
+      "record": 9,
+      "values": {
+        "document_id": "DEMO-008",
+        "revision": "",
+        "document_date": "2026-10-06",
+        "amount": "75.00",
+        "currency": "USD",
+        "status": "review"
+      },
+      "issues": [
+        "missing_unique_key",
+        "revision:required"
+      ]
+    },
+    {
+      "record": 10,
+      "values": {
+        "document_id": "DEMO-009",
+        "revision": "00",
+        "document_date": "2026-10-06",
+        "amount": "75.00",
+        "currency": "USD",
+        "status": "approved"
+      },
+      "issues": []
+    },
+    {
+      "record": 11,
+      "values": {
+        "document_id": "DEMO-010",
+        "revision": "00",
+        "document_date": "2026-10-06",
+        "amount": "75.00",
+        "currency": "USD",
+        "status": "closed"
+      },
+      "issues": [
+        "status:unexpected_value"
+      ]
+    },
+    {
+      "record": 12,
+      "values": {
+        "document_id": "=1+1",
+        "revision": "00",
+        "document_date": "2026-10-06",
+        "amount": "75.00",
+        "currency": "USD",
+        "status": "review"
+      },
+      "issues": [
+        "document_id:spreadsheet_formula"
+      ]
+    }
+  ]
+}

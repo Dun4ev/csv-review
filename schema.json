@@ -1,0 +1,11 @@
+{
+  "columns": {
+    "document_id": {"type": "text", "required": true},
+    "revision": {"type": "text", "required": true},
+    "document_date": {"type": "date", "required": true},
+    "amount": {"type": "decimal", "required": true, "minimum": "0"},
+    "currency": {"type": "enum", "required": true, "values": ["USD", "EUR", "RSD"]},
+    "status": {"type": "enum", "required": true, "values": ["draft", "review", "approved"]}
+  },
+  "unique_key": ["document_id", "revision"]
+}
