@@ -31,7 +31,7 @@ class ReviewTests(unittest.TestCase):
             self.assertEqual(stderr, "")
             self.assertEqual(summary["input_sha256"], hashlib.sha256(original).hexdigest())
             self.assertEqual(original, (PRODUCT / "sample.csv").read_bytes())
-            bundle = json.loads((output / "audit.json").read_text())
+            bundle = json.loads((output / "audit.json").read_text(encoding="utf-8"))
             self.assertEqual(bundle["records"][2]["issues"], ["duplicate_unique_key"])
             self.assertEqual(bundle["records"][3]["issues"], ["duplicate_unique_key"])
             self.assertEqual(bundle["records"][0]["values"]["revision"], "00")
@@ -96,7 +96,7 @@ class ReviewTests(unittest.TestCase):
             code, stdout, _ = self.run_tool(input_file, "--schema", schema_file, "--delimiter", ";", "--encoding", "cp1251", "--output", tmp / "out")
             self.assertEqual(code, 0)
             self.assertEqual(json.loads(stdout)["records"], 1)
-            audit = json.loads((tmp / "out" / "audit.json").read_text())
+            audit = json.loads((tmp / "out" / "audit.json").read_text(encoding="utf-8"))
             self.assertEqual(audit["records"][0]["values"]["description"], "Текст\nвторая строка")
 
     def test_limits(self):
