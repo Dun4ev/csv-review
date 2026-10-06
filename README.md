@@ -36,7 +36,7 @@ Set `--delimiter ';'` or `--encoding cp1251` explicitly when needed. Default is 
 
 CSV exports are viewing copies: potentially executable spreadsheet cells (including names of columns) get a leading apostrophe. This can alter imported strings; use `audit.json` for exact source values. Review does not assert accounting correctness, engineering approval or business truth. The rules only verify specified data conditions.
 
-Do not publish audit bundles containing client data. Only authorized, necessary datasets should be processed, with agreed retention and delivery. Tested locally on macOS/Python 3.14; Windows execution is not yet verified. Confidentiality arrangements and the client's lawful authority over data must be settled before receiving client files.
+Do not publish audit bundles containing client data. Only authorized, necessary datasets should be processed, with agreed retention and delivery. The seven-test suite passed on Linux, macOS and Windows with Python 3.10 and 3.14. [Completed cross-platform run](https://github.com/Dun4ev/csv-review/actions/runs/37549070431). Confidentiality arrangements and the client's lawful authority over data must be settled before receiving client files.
 
 ## Verification
 
