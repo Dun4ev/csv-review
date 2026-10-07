@@ -8,9 +8,16 @@ Python 3.10+; no dependencies, account, network requests or API keys. Source fil
 
 ## Need this adapted to your export?
 
-For paid setup of custom checks or recurring batch review, contact [Andrey on Freelancer](https://www.freelancer.com/u/dun4ev). Start with an anonymized example, your expected output and the rules you currently check by hand. Scope and price are agreed before accepting a project. This repository is an independently runnable demonstration of the validation code, not evidence of customer results.
+[Message Andrey on Freelancer](https://www.freelancer.com/u/dun4ev) with an anonymized CSV, the desired output and the rules you currently check by hand. Choose a setup pilot or recurring review. Scope, delivery dates and price are confirmed before project acceptance.
 
-Typical first scope: one CSV schema, up to 10,000 rows, an exception report and a repeatable local command. XLSX handling, corrections against a master list and backend/API integration require separate sample review and implementation. You can use the free tool without purchasing support.
+| Service | Price (USD) | Included scope | What you receive |
+| --- | ---: | --- | --- |
+| Setup pilot | $100 once | One CSV, up to 10,000 rows and 10 MiB; one agreed schema and validation rule set | Configuration, repeatable local command, initial review report and instructions |
+| Recurring review | $150 per month | Four CSV batches, each up to 10,000 rows and 10 MiB, using the same unchanged schema and rules | Four report bundles with passed rows, exceptions and exact source values; a short monthly issue summary |
+
+The recurring service follows an agreed setup. Each report flags issues for your review; corrections, deduplication or enrichment require separately approved rules. New schemas, XLSX handling, OCR, master-list corrections and backend/API integration are separately scoped after sample review. Files are supplied and reports delivered through the agreed private project channel. Monthly work is agreed one month at a time through Freelancer.
+
+Prices cover the service scope above. This repository and its MIT-licensed code remain free to use independently. The synthetic example demonstrates how the checks work; no client results or revenue are claimed. Please send an anonymized sample first, and keep confidential production data out of public repository issues.
 
 ## Run
 
