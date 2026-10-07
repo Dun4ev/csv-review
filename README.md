@@ -10,6 +10,8 @@ Python 3.10+; no dependencies, account, network requests or API keys. Source fil
 
 [Message Andrey on Freelancer](https://www.freelancer.com/u/dun4ev) with an anonymized CSV, the desired output and the rules you currently check by hand. Choose a setup pilot or recurring review. Scope, delivery dates and price are confirmed before project acceptance.
 
+[View the CSV Review service on Freelancer](https://www.freelancer.com/service/python/csv-review-setup-and-four-monthly-checks): $250 initially ($100 setup + $150 first month), then $150 per month for the unchanged agreed schema and rules.
+
 | Service | Price (USD) | Included scope | What you receive |
 | --- | ---: | --- | --- |
 | Setup pilot | $100 once | One CSV, up to 10,000 rows and 10 MiB; one agreed schema and validation rule set | Configuration, repeatable local command, initial review report and instructions |
