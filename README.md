@@ -47,6 +47,16 @@ CSV exports are viewing copies: potentially executable spreadsheet cells (includ
 
 Do not publish audit bundles containing client data. Only authorized, necessary datasets should be processed, with agreed retention and delivery. The seven-test suite passed on Linux, macOS and Windows with Python 3.10 and 3.14. [Completed cross-platform run](https://github.com/Dun4ev/csv-review/actions/runs/37549070431). Confidentiality arrangements and the client's lawful authority over data must be settled before receiving client files.
 
+## Measured service-size example
+
+```sh
+python3 benchmark.py --rows 10000 --repeat 3
+```
+
+The benchmark creates a deterministic synthetic CSV (430,044 bytes), runs the real CLI and checks each report against independently specified expected issues. On the recorded Python 3.12.14 / macOS arm64 run, the median end-to-end time was **0.141 seconds** across three runs: **9,995 accepted records and 5 held for review**. Timing includes process startup, input/schema reading, validation and report generation; fixture creation and verification are excluded.
+
+Every run checked duplicate-key handling for both colliding records, an invalid date, a negative amount and a formula-like identifier, unchanged source hashes, all 10,000 exact raw records in the audit, CSV record counts and protected spreadsheet viewing copies. [Recorded timings and hashes](benchmarks/10000-rows.json) identify the exact code and schema. This is one synthetic workload at the service's row limit, not a measurement at the 10 MiB size limit, a client result, a human-time saving or a throughput guarantee. Run the command on your own machine to measure it.
+
 ## Verification
 
 ```sh

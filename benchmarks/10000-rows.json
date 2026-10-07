@@ -1,0 +1,28 @@
+{
+  "synthetic": true,
+  "rows": 10000,
+  "accepted": 9995,
+  "needs_review": 5,
+  "input_bytes": 430044,
+  "input_sha256": "a55820c493f241dac427a851b7a8cd0cc14f5f90d6d6605c0760ebf9e4261246",
+  "source_code_sha256": "05999ef54b8fc75a2f83f687b74c3e654d95e6d4ee1ac1ad7eba1193fdf7c2ed",
+  "schema_sha256": "80212b629a05f07557c310e44ae88988065b7d6d7a7cd6c79720384169b4a5c2",
+  "elapsed_seconds": [
+    0.1423460839978361,
+    0.13657187499848078,
+    0.14137216600283864
+  ],
+  "median_seconds": 0.14137216600283864,
+  "python_version": "3.12.14",
+  "os_architecture": "Darwin arm64",
+  "assertions": {
+    "exit_code_1_each_run": true,
+    "expected_counts_each_run": true,
+    "record_numbers_and_issue_codes_each_run": true,
+    "source_sha_unchanged_each_run": true,
+    "audit_preserves_all_raw_values_each_run": true,
+    "csv_record_counts_each_run": true,
+    "formula_viewing_copy_protected_each_run": true
+  },
+  "scope": "Synthetic workload only; no human-time or ROI comparison and no universal throughput guarantee."
+}
