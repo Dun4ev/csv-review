@@ -4,6 +4,12 @@
 
 A real local CSV validation tool for recurring operational exports. The included data is synthetic. This tool is a separate delivery asset; it does not enable OCR or AI in the existing Document Intake demo.
 
+## Browser preview
+
+![Read-only preview of the synthetic CSV Review report](docs/csv-review-preview.png)
+
+The screenshot shows the synthetic output. For the interactive, read-only sample view, clone or download the whole repository and open `example-report/index.html` in a browser. It includes working filters, search, and source-value details; it does not accept uploads or rerun validation.
+
 Python 3.10+; no dependencies, account, network requests or API keys. Source files are read-only. Input limit: 10 MiB and 100,000 logical records. The service offer has a smaller agreed scope.
 
 ## Need this adapted to your export?
