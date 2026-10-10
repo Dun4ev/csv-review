@@ -16,6 +16,8 @@ Python 3.10+; no dependencies, account, network requests or API keys. Source fil
 
 [Message Andrey on Freelancer](https://www.freelancer.com/u/dun4ev) with an anonymized CSV, the desired output and the rules you currently check by hand. Choose a setup pilot or recurring review. Scope, delivery dates and price are confirmed before project acceptance.
 
+[View the one-file CSV pilot on Upwork](https://www.upwork.com/services/product/development-it-a-repeatable-csv-quality-check-with-an-exception-report-and-python-tool-2108275311509536466): $100 once for one agreed CSV up to 10,000 rows and 10 MiB, with a repeatable Python tool, review report and instructions. Delivery is 7 calendar days after complete input, with one revision. Recurring reviews require a separate agreement.
+
 [View the CSV Review service on Freelancer](https://www.freelancer.com/service/python/csv-review-setup-and-four-monthly-checks): $250 initially ($100 setup + $150 first month), then $150 per month for the unchanged agreed schema and rules.
 
 | Service | Price (USD) | Included scope | What you receive |
